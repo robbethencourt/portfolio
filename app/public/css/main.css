@@ -1,0 +1,446 @@
+/* global styles */
+body {
+  color: #65707a;
+  background: #fff; }
+
+p {
+  font-size: 1em;
+  line-height: 2em;
+  color: #65707a; }
+
+a:link, a:visited {
+  transition: 0.3s;
+  color: #db0a6d; }
+
+a:hover, a:focus {
+  transition: 0.3s;
+  color: #1f2631; }
+
+img {
+  max-width: 100%; }
+
+.strike-th {
+  text-decoration: line-through; }
+
+.form-control {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #db0a6d;
+  border-radius: 0; }
+
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 3px solid #db0a6d;
+  background: #E4EBF5; }
+
+.btn-custom, a.btn-custom {
+  transition: 0.3s;
+  color: #fff;
+  background: #1f2631 url(../images/polygon-bg.jpg) no-repeat top center; }
+
+.btn-custom:hover, .btn-custom:focus {
+  transition: 0.3s;
+  color: #fff;
+  background: #1f2631 url(../images/polygon-bg.jpg) no-repeat 5px center; }
+
+p.link-button-wrapper {
+  margin: 100px auto 50px auto; }
+
+a.btn-pink {
+  transition: 0.3s;
+  color: #fff;
+  background: #db0a6d; }
+
+a.btn-pink:hover, a.btn-pink:focus {
+  transition: 0.3s;
+  color: #fff;
+  background: #1f2631; }
+
+/* Navbar Styles */
+.navbar {
+  margin: 0;
+  border: none;
+  background: rgba(255, 255, 255, 0.9); }
+
+/* so that the navbar doesn't stay fixed on smaller screen sizes */
+.navbar-fixed-top {
+  position: static; }
+
+.navbar-inverse .navbar-brand {
+  color: #acb4bf; }
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #db0a6d; }
+
+.navbar-inverse .navbar-toggle {
+  border: none; }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background: #acb4bf; }
+
+.navbar-inverse .navbar-collapse {
+  border: none; }
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background: none; }
+
+.navbar-collapse {
+  box-shadow: none; }
+
+.navbar-right {
+  text-align: right; }
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:visited {
+  color: #acb4bf; }
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a.active {
+  color: #db0a6d;
+  text-decoration: line-through; }
+
+/* Jumbotron Styles */
+.jumbotron {
+  padding: 1.5em 0 2em 0;
+  color: #1f2631;
+  background: #fff; }
+
+.jumbotron h1 {
+  overflow: hidden;
+  padding: 0;
+  font-family: arial;
+  font-size: 20em;
+  font-weight: bold;
+  white-space: nowrap;
+  background: #1f2631 url(../images/polygon-bg.jpg) no-repeat top center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+.jumbotron p {
+  font-size: 1em; }
+
+.im-rob {
+  margin-top: 0;
+  padding: 0 0 3em 0;
+  text-align: center; }
+
+/* Section Heading Styles */
+.section-heading {
+  padding: 7em 0;
+  background: #F0F3F7; }
+
+.section-heading h2 {
+  margin: 0 0 1em 0;
+  padding: 0;
+  color: #5e7184;
+  font-size: 2em;
+  font-weight: bold; }
+
+.section-heading p {
+  padding: 0 0 0 1em;
+  margin: 0;
+  color: #1f2631;
+  font-size: 1em;
+  /* this was 2em */
+  font-style: italic;
+  border-left: 3px solid #db0a6d; }
+
+.section-heading h5 {
+  padding: 1.5em 0 0 0;
+  color: #1f2631;
+  font-style: italic; }
+
+/* for separation from the bottom of the UCF project section and the design & development section heading */
+.dandd-sh {
+  margin-top: 100px; }
+
+/* Gallery Styles */
+.gallery {
+  margin-top: 7em; }
+
+.gallery-heading {
+  padding: 150px 0 20px 0;
+  text-align: center; }
+
+.gallery h1, .gallery p {
+  color: #fff; }
+
+.gallery ul {
+  margin: 0;
+  padding: 0; }
+
+.gallery ul li {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  list-style-type: none;
+  color: #47475c;
+  background: none; }
+
+/* Sets the pinkish redish background on gallery items to not show until hover listed below */
+.gallery-header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 2% 5%;
+  color: #fff;
+  opacity: 0;
+  transition: 0.35s; }
+
+.banner-ul a:hover .gallery-header, .banner-ul a:focus .gallery-header, .gallery-ul a:hover .gallery-header, .gallery-ul a:focus .gallery-header, .gallery-md-ul a:hover .gallery-header, .gallery-md-ul a:focus .gallery-header {
+  background: rgba(219, 10, 109, 0.85);
+  opacity: 1;
+  transition: 0.35s;
+  clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%); }
+
+.banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {
+  margin-left: 0px;
+  transition: 0.35s; }
+
+.gallery-header h1 {
+  margin: 0 0 0 -30px;
+  font-size: 5em;
+  font-weight: bold;
+  transition: 0.35s; }
+
+.gallery-header p {
+  font-size: 1em;
+  margin: 2% 0 2% -70px;
+  font-style: italic;
+  transition: 0.35s; }
+
+/* projects */
+/* content */
+.content {
+  padding: 5em 0 0 0; }
+
+.content h4 {
+  margin: 2em 0 .75em 0; }
+
+.content img {
+  margin: 50px 0;
+  box-shadow: 1px 15px 30px #ADB9C4; }
+
+.iphone-display-2 img, .iphone-display img, img.logo-display, img.rwd-displays {
+  box-shadow: none; }
+
+.iphone-display-2 img {
+  max-width: 50%;
+  float: left; }
+
+/* about */
+/* Technology Used */
+.tech-used {
+  padding: 7em 0 4em 0;
+  color: #fff;
+  background: #1f2631; }
+
+.tech-used .row > div {
+  padding-bottom: 5em; }
+
+.tech-used p, .tech-used h2, .tech-used h3, .tech-used h5 {
+  color: #fff; }
+
+.tech-used > h2 {
+  padding: 0;
+  text-align: center; }
+
+.fa {
+  font-size: 2em; }
+
+.progress {
+  height: 3px;
+  border-radius: 0; }
+
+.progress-bar {
+  background: #db0a6d; }
+
+/* ever expanding list */
+.ever-expanding {
+  padding: 3em 0 7em 0; }
+
+.ever-expanding h2 {
+  padding: 2em 0 3em 0; }
+
+.ever-expanding ul {
+  padding: 0;
+  list-style-type: none; }
+
+.percent-circle {
+  margin: 1.5em auto 1em auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 43px 10px 25px 10px;
+  border: 17px solid #db0a6d;
+  color: #1f2631;
+  text-align: center;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: bold; }
+
+.clear-expert {
+  padding-top: 2em; }
+
+/* hobbies */
+.about-hobbies {
+  padding: 3em 0 7em 0;
+  background: #fff; }
+
+.about-hobbies-row {
+  padding: 20em 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #EBEFF5; }
+
+.about-hobbies-row:last-of-type {
+  border-bottom: none; }
+
+.about-hobbies-h3-bg {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #EBEFF5;
+  font-size: 45em;
+  font-weight: bold;
+  line-height: 1em;
+  white-space: nowrap; }
+
+.about-hobbies-row img.meat-deer-ah {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.about-hobbies h2 {
+  padding: 2em 0 0 0; }
+
+/* contact */
+.contact {
+  background: #fff; }
+
+h2.mail-link-h2 {
+  margin: .5em 0;
+  font-size: 9em;
+  text-align: center; }
+
+.contact a, .contact a:link {
+  color: #1f2631; }
+
+.contact a:hover, .contact a:focus {
+  color: #db0a6d; }
+
+/* if i ever want to use a contact form this is the styling
+.contact-form {
+	padding-top: 3em;
+}
+*/
+footer {
+  margin-top: 10em;
+  color: #acb4bf;
+  background: #1f2631; }
+
+footer a h3, footer a:visited h3 {
+  transition: 0.3s;
+  padding: 2em 0;
+  text-align: center;
+  background: url(../images/polygon-bg.jpg) no-repeat top center; }
+
+footer a:hover h3, footer a:hover h3 {
+  transition: 0.3s;
+  color: #acb4bf;
+  background: url(../images/polygon-bg.jpg) no-repeat bottom center; }
+
+a.back-to-top:hover, a.back-to-top:focus {
+  text-decoration: none; }
+
+.social-networks-ul a, .social-networks-ul a:visited {
+  color: #acb4bf; }
+
+.social-networks-ul a:hover, .social-networks-ul a:focus {
+  color: #db0a6d; }
+
+.copyright {
+  padding-top: 1em; }
+
+.social-networks-ul {
+  margin: 1em 0; }
+
+.social-networks-ul li {
+  padding-bottom: 1em; }
+
+/* iPhones (portrait) ----------- */
+@media only screen and (min-width: 435px) {
+  .about-hobbies-row img.meat-deer-ah {
+    width: 82%; } }
+
+/* iPhones (landscape) ----------- */
+@media only screen and (min-width: 560px) {
+  /* Gallery Styles */
+  .gallery ul li {
+    float: left;
+    width: 48%;
+    margin: 1%; }
+  /* content */
+  .content h4, .content p {
+    width: 80%;
+    margin-left: 10%; }
+  /* about hobbies */
+  .about-hobbies-row img.meat-deer-ah {
+    width: 60%; }
+  .iphone-display img {
+    float: left;
+    width: 33%; } }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) {
+  /* so that the navbar does stay fixed on larger screen sizes */
+  .navbar-fixed-top {
+    position: fixed; }
+  /* needs the adjusted padding as the navbar being fixed brings up the rest of the layout */
+  .jumbotron {
+    padding-top: 5em; }
+  /* content */
+  .content h4, .content p {
+    width: 70%;
+    margin-left: 15%; }
+  /* about technologies used */
+  .tech-used ul {
+    padding-bottom: 3em; }
+  /* about hobbies */
+  .about-hobbies-row img.meat-deer-ah {
+    width: 45%; } }
+
+/* 992px ----------- */
+@media only screen and (min-width: 992px) {
+  /* about hobbies */
+  .about-hobbies-row img.meat-deer-ah {
+    width: inherit; }
+  /* footer */
+  footer .row {
+    margin: 2em 0 1em 0; }
+  .copyright {
+    padding-top: 0; }
+  .social-networks-ul {
+    margin: 0;
+    text-align: right; } }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 1024px) {
+  /* content */
+  .content h4, .content p {
+    width: 60%;
+    margin-left: 20%; }
+  .iphone-display-2 {
+    margin-left: 5%; } }
+
+@media only screen and (min-width: 1201px) {
+  .iphone-display-2 {
+    margin-left: 15%; }
+  img.logo-display {
+    margin-left: 10%; }
+  img.rwd-displays {
+    margin-left: 5%; } }
