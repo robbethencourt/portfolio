@@ -10,6 +10,16 @@ module.exports = function (app){
 
 	});
 
+	// route url root to projects page
+	app.get('/', function(req, res) {
+		
+		res.render('projects', {
+			title: 'Projects',
+			active_projects: true
+		});
+
+	});
+
 	app.get('/crisiscorps', function(req, res) {
 		
 		res.render('crisiscorps', {
@@ -152,6 +162,13 @@ module.exports = function (app){
 			active_contact: true
 		});
 
+	});
+
+	// 404 page
+	app.use(function(req, res) {
+		res.render('404', {
+			title: 'Page Not Found'
+		});
 	});
 
 } // end module.exports()
