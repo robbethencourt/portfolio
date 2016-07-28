@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Rob Bethencourt's portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbethencourt/portfolio.git"
+  },
+  "keywords": [
+    "developer",
+    "designer"
+  ],
+  "author": "Robert Bethencourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robbethencourt/portfolio/issues"
+  },
+  "homepage": "https://github.com/robbethencourt/portfolio#readme"
+}
