@@ -41,9 +41,9 @@ function expandingList() {
 
 	// Calculations
 	// the percent of items I've yet to learn
-	var the_percent = (list_items.length - strike_throughs.length) / list_items.length;
+	var the_percent = strike_throughs.length / list_items.length;
 	// the percent as an integer to display
-	the_percent = the_percent.toFixed(2) * 100;
+	the_percent = Math.round(the_percent.toFixed(2) * 100);
 
 	// Text Node
 	// create a text node off the calculated percentage

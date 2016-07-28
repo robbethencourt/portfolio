@@ -488,7 +488,7 @@ footer {
     }
 
     /* content */
-	.content h4, .content p {
+	.content h4, .content p, .content-ul {
 		width: 80%;
 		margin-left: 10%;
 	}
@@ -519,7 +519,7 @@ footer {
 	}
 
 	/* content */
-	.content h4, .content p {
+	.content h4, .content p, .content-ul {
 		width: 70%;
 		margin-left: 15%;
 	}
@@ -567,7 +567,7 @@ footer {
 @media only screen and (min-width : 1024px) {
 
 	/* content */
-	.content h4, .content p {
+	.content h4, .content p, .content-ul {
 		width: 60%;
 		margin-left: 20%;
 	}

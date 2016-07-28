@@ -6,7 +6,7 @@
 		<meta name="description" content="Rob Bethencourt's portfolio">
 		<meta name="author" content="Rob Bethencourt">
 
-		<title>Rob's Portfolio</title>
+		<title>Rob's Portfolio | {{title}}</title>
 
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -32,9 +32,9 @@
     			</div>
     			<div class="collapse navbar-collapse" id="myNavbar">
       				<ul class="nav navbar-nav navbar-right">
-        				<li><a class="active" href="index.html">Projects</a></li>
-        				<li><a href="about.html">About</a></li>
-        				<li><a href="contact.html">Contact</a></li>
+        				<li><a class="{{#if active_projects}}active{{/if}}" href="/projects">Projects</a></li>
+        				<li><a class="{{#if active_about}}active{{/if}}" href="/about">About</a></li>
+        				<li><a class="{{#if active_contact}}active{{/if}}" href="/contact">Contact</a></li>
       				</ul>
     			</div>
   			</div>
