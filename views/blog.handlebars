@@ -1,0 +1,23 @@
+<!-- About Section -->
+<div class="section-heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-xs-10">
+				<h2>blog</h2>
+				<p class="article-h2-content">This be my blog page.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- blog -->
+<div class="blog">
+    <h2>My Blog</h2>
+		<p>{{stuff}}</p>
+		{{#each blogs}}
+			<p><a href="{{url}}">{{title}}</a></p>
+			<p>{{url}}</p>
+			<p>{{tags}}</p>
+			<p>{{date}}</p>
+		{{/each}}
+</div>
