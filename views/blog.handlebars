@@ -4,20 +4,24 @@
 		<div class="row">
 			<div class="col-md-6 col-xs-10">
 				<h2>blog</h2>
-				<p class="article-h2-content">This be my blog page.</p>
+				<p class="article-h2-content">I blog about web development, movies, cocktails, and who know what else.</p>
 			</div>
 		</div>
 	</div>
 </div>
 
 <!-- blog -->
-<div class="blog">
-    <h2>My Blog</h2>
-		<p>{{stuff}}</p>
-		{{#each blogs}}
-			<p><a href="{{url}}">{{title}}</a></p>
-			<p>{{url}}</p>
-			<p>{{tags}}</p>
-			<p>{{date}}</p>
-		{{/each}}
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+							{{#each blogs}}
+								<div class="blog-title-container">
+									<h4><a href="{{url}}">{{title}}</a></h4>
+									<p class="blog-title-container__p">{{date}} | {{#each tags}}{{this}} {{#unless @last}}•{{/unless}} {{/each}}</p>
+								</div>
+							{{/each}}
+            </div>
+        </div>
+    </div>
 </div>

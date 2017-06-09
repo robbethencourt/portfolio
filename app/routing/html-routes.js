@@ -1,10 +1,10 @@
-// const records = require('../../records/blog-test')
-// console.log(records)
-const normalizePath = require('path').join(__dirname, '../../records')
-
-var allRecords = require('fs').readdirSync(normalizePath).map(function (file) {
-  return require('../../records/' + file)
-})
+const blogs = require('../../records/blogs')
+console.log(blogs)
+// const normalizePath = require('path').join(__dirname, '../../records')
+//
+// var allRecords = require('fs').readdirSync(normalizePath).map(function (file) {
+//   return require('../../records/' + file)
+// })
 
 module.exports = function (app) {
   // html get requests
@@ -140,16 +140,14 @@ module.exports = function (app) {
       title: 'Blog',
       active_blog: true,
       stuff: 'some other stuff to see if it passes.',
-      blogs: allRecords
+      blogs: blogs
     })
   })
 
   app.get('/blog/:blog_title', function (req, res) {
     res.render('blog/' + req.params.blog_title, {
       title: 'Blog',
-      active_blog: true,
-      stuff: 'some other stuff to see if it passes.',
-      blogs: allRecords
+      active_blog: true
     })
   })
 
