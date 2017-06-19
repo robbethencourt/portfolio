@@ -232,7 +232,6 @@ a.btn-pink:hover, a.btn-pink:focus {
     background: rgba(219, 10, 109, 0.85);
     opacity: 1;
     transition: 0.35s;
-    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
   }
 
   .banner-ul a:hover .gallery-header h1, .banner-ul a:hover .gallery-header p, .gallery-ul a:hover .gallery-header h1, .gallery-ul a:hover .gallery-header p, .gallery-md-ul a:hover .gallery-header h1, .gallery-md-ul a:hover .gallery-header p {
@@ -502,7 +501,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     margin: 1%;
   }
   /* content */
-  .content h4, .content p, .content-ul {
+  .content h4, .content h2, .content p, .content-ul {
     width: 80%;
     margin-left: 10%;
   }
@@ -531,7 +530,7 @@ a.back-to-top:hover, a.back-to-top:focus {
     padding-bottom: 5em;
   }
   /* content */
-  .content h4, .content p, .content-ul {
+  .content h4, .content h2, .content p, .content-ul {
     width: 70%;
     margin-left: 15%;
   }
@@ -567,7 +566,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 1024px) {
   /* content */
-  .content h4, .content p, .content-ul {
+  .content h4, .content h2, .content p, .content-ul {
     width: 60%;
     margin-left: 20%;
   }

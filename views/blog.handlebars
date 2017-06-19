@@ -14,14 +14,15 @@
 <div class="content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-9">
 							{{#each blogs}}
 								<div class="blog-title-container">
-									<h4><a href="{{url}}">{{title}}</a></h4>
+									<h2><a href="{{url}}">{{title}}</a></h2>
 									<p class="blog-title-container__p">{{date}} | {{#each tags}}{{this}} {{#unless @last}}•{{/unless}} {{/each}}</p>
 								</div>
 							{{/each}}
             </div>
+						{{>asideBlog stuff=stuff}}
         </div>
     </div>
 </div>

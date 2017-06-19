@@ -1,10 +1,5 @@
 const blogs = require('../../records/blogs')
-console.log(blogs)
-// const normalizePath = require('path').join(__dirname, '../../records')
-//
-// var allRecords = require('fs').readdirSync(normalizePath).map(function (file) {
-//   return require('../../records/' + file)
-// })
+const helpers = require('../../utils/helpers')
 
 module.exports = function (app) {
   // html get requests
@@ -136,10 +131,11 @@ module.exports = function (app) {
   })
 
   app.get('/blog', function (req, res) {
+    const blogTags = helpers.createListOfTags(blogs)
     res.render('blog', {
       title: 'Blog',
       active_blog: true,
-      stuff: 'some other stuff to see if it passes.',
+      stuff: blogTags,
       blogs: blogs
     })
   })
