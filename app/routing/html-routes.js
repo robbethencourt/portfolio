@@ -135,7 +135,7 @@ module.exports = function (app) {
     res.render('blog', {
       title: 'Blog',
       active_blog: true,
-      stuff: blogTags,
+      blogTags: blogTags,
       blogs: blogs
     })
   })
@@ -144,6 +144,18 @@ module.exports = function (app) {
     res.render('blog/' + req.params.blog_title, {
       title: 'Blog',
       active_blog: true
+    })
+  })
+
+  app.get('/blog/category/:blog_category', function (req, res) {
+    const blogCategory = req.params.blog_category
+    const blogTags = helpers.createListOfTags(blogs)
+    res.render('blog', {
+      title: 'Blog',
+      active_blog: true,
+      blogTags: blogTags,
+      blogs: blogs,
+      blogCategory: blogCategory
     })
   })
 

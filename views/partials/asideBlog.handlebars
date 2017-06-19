@@ -1,5 +1,9 @@
 <!-- aside -->
 <div class="col-sm-3">
   <h4>Ths is the aside</h4>
-  <p>{{stuff}}
+  <ul>
+    {{#each blogTags}}
+      <li><a href={{concatCategory this}}>{{this}}</a></li>
+    {{/each}}
+  </ul>
 </div>

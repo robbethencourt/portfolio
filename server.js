@@ -12,6 +12,11 @@ app.use(express.static(path.join(__dirname, '/app/public')))
 
 // handlebars
 app.engine('handlebars', exphbs({
+  helpers: {
+    concatCategory: function (string) {
+      return '/blog/category/' + string
+    }
+  },
   defaultLayout: 'main'
 }))
 

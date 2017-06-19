@@ -3,8 +3,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-xs-10">
-				<h2>blog</h2>
-				<p class="article-h2-content">I blog about web development, movies, cocktails, and who know what else.</p>
+				{{#if blogCategory}}
+					<h2>{{blogCategory}}</h2>
+				{{else}}
+					<h2>blog</h2>
+					<p class="article-h2-content">I blog about web development, movies, cocktails, and who know what else.</p>
+				{{/if}}
 			</div>
 		</div>
 	</div>
@@ -22,7 +26,7 @@
 								</div>
 							{{/each}}
             </div>
-						{{>asideBlog stuff=stuff}}
+						{{>asideBlog blogTags=blogTags}}
         </div>
     </div>
 </div>
