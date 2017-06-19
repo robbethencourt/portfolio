@@ -2,6 +2,7 @@
 var express = require('express')
 var exphbs = require('express-handlebars')
 var path = require('path')
+var R = require('ramda')
 
 // Port
 var app = express()
@@ -14,7 +15,7 @@ app.use(express.static(path.join(__dirname, '/app/public')))
 app.engine('handlebars', exphbs({
   helpers: {
     concatCategory: function (string) {
-      return '/blog/category/' + string
+      return '/blog/category/' + R.replace(' ', '-', string)
     }
   },
   defaultLayout: 'main'

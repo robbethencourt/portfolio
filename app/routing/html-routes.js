@@ -1,5 +1,6 @@
 const blogs = require('../../records/blogs')
 const helpers = require('../../utils/helpers')
+const R = require('ramda')
 
 module.exports = function (app) {
   // html get requests
@@ -150,12 +151,14 @@ module.exports = function (app) {
   app.get('/blog/category/:blog_category', function (req, res) {
     const blogCategory = req.params.blog_category
     const blogTags = helpers.createListOfTags(blogs)
+    const blogsInCategory = helpers.blogsInCategory(blogs, blogCategory)
+    console.log(blogsInCategory)
     res.render('blog', {
       title: 'Blog',
       active_blog: true,
       blogTags: blogTags,
-      blogs: blogs,
-      blogCategory: blogCategory
+      blogs: blogsInCategory,
+      blogCategory: R.replace('-', ' ', blogCategory)
     })
   })
 

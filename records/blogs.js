@@ -1,5 +1,11 @@
 const blogs = [
   {
+    title: 'Blog Test3',
+    url: '/blog/blog-test-3',
+    tags: ['blog'],
+    date: 'June 19, 2017'
+  },
+  {
     title: 'Blog Test 2',
     url: '/blog/blog-test-2',
     tags: ['blog', 'test', 'another test'],
