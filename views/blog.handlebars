@@ -5,7 +5,7 @@
 			<div class="col-md-6 col-xs-10">
 				{{#if blogCategory}}
 					<h2>{{blogCategory}}</h2>
-					<p class="article-h2-content">blogs in the {{blogCategory}} category</p>
+					<p class="article-h2-content">posts in the {{blogCategory}} category</p>
 				{{else}}
 					<h2>blog</h2>
 					<p class="article-h2-content">I blog about web development, movies, cocktails, and who know what else.</p>
@@ -23,11 +23,11 @@
 							{{#each blogs}}
 								<div class="blog-title-container">
 									<h2><a href="{{url}}">{{title}}</a></h2>
-									<p class="blog-title-container__p">{{date}} | {{#each tags}}{{this}} {{#unless @last}}•{{/unless}} {{/each}}</p>
+									<p class="blog-title-container__p">{{date}} | {{#each categories}}{{this}} {{#unless @last}}•{{/unless}} {{/each}}</p>
 								</div>
 							{{/each}}
             </div>
-						{{>asideBlog blogTags=blogTags}}
+						{{>asideBlog blogCategories=blogCategories}}
         </div>
     </div>
 </div>

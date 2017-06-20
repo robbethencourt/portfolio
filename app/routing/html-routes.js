@@ -132,31 +132,32 @@ module.exports = function (app) {
   })
 
   app.get('/blog', function (req, res) {
-    const blogTags = helpers.createListOfTags(blogs)
+    const blogCategories = helpers.createListOfCategories(blogs)
     res.render('blog', {
       title: 'Blog',
       active_blog: true,
-      blogTags: blogTags,
+      blogCategories: blogCategories,
       blogs: blogs
     })
   })
 
   app.get('/blog/:blog_title', function (req, res) {
+    const blogCategories = helpers.createListOfCategories(blogs)
     res.render('blog/' + req.params.blog_title, {
       title: 'Blog',
-      active_blog: true
+      active_blog: true,
+      blogCategories: blogCategories
     })
   })
 
   app.get('/blog/category/:blog_category', function (req, res) {
     const blogCategory = req.params.blog_category
-    const blogTags = helpers.createListOfTags(blogs)
+    const blogCategories = helpers.createListOfCategories(blogs)
     const blogsInCategory = helpers.blogsInCategory(blogs, blogCategory)
-    console.log(blogsInCategory)
     res.render('blog', {
       title: 'Blog',
       active_blog: true,
-      blogTags: blogTags,
+      blogCategories: blogCategories,
       blogs: blogsInCategory,
       blogCategory: R.replace('-', ' ', blogCategory)
     })
