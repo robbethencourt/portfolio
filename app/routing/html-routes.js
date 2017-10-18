@@ -1,8 +1,4 @@
-const blogs = require('../../records/blogs')
-const helpers = require('../../utils/helpers')
-const R = require('ramda')
 const axios = require('axios')
-// const Feed = require('rss-to-json')
 
 module.exports = function (app) {
   // html get requests
@@ -142,7 +138,6 @@ module.exports = function (app) {
       }
     })
       .then(response => {
-        console.log(response.data)
         res.render('blog', {
           title: 'Blog',
           active_blog: true,
@@ -160,35 +155,6 @@ module.exports = function (app) {
           error: error
         })
       })
-  // const blogCategories = helpers.createListOfCategories(blogs)
-  // res.render('blog', {
-  //   title: 'Blog',
-  //   active_blog: true,
-  //   blogCategories: blogCategories,
-  //   blogs: blogs
-  // })
-  })
-
-  app.get('/blog/:blog_title', function (req, res) {
-    const blogCategories = helpers.createListOfCategories(blogs)
-    res.render('blog/' + req.params.blog_title, {
-      title: 'Blog',
-      active_blog: true,
-      blogCategories: blogCategories
-    })
-  })
-
-  app.get('/blog/category/:blog_category', function (req, res) {
-    const blogCategory = req.params.blog_category
-    const blogCategories = helpers.createListOfCategories(blogs)
-    const blogsInCategory = helpers.blogsInCategory(blogs, blogCategory)
-    res.render('blog', {
-      title: 'Blog',
-      active_blog: true,
-      blogCategories: blogCategories,
-      blogs: blogsInCategory,
-      blogCategory: R.replace('-', ' ', blogCategory)
-    })
   })
 
   // 404 page
