@@ -8,7 +8,7 @@
 					<p class="article-h2-content">posts in the {{blogCategory}} category</p>
 				{{else}}
 					<h2>blog</h2>
-					<p class="article-h2-content">I blog about web development, movies, cocktails, and who know what else.</p>
+					<p class="article-h2-content">My blog posts can be found on Medium. You can check them out below.</p>
 				{{/if}}
 			</div>
 		</div>
@@ -16,18 +16,24 @@
 </div>
 
 <!-- blog -->
-<div class="content">
+<div class="content content-blog">
     <div class="container">
         <div class="row">
-            <div class="col-sm-9">
-							{{#each blogs}}
-								<div class="blog-title-container">
-									<h2><a href="{{url}}">{{title}}</a></h2>
-									<p class="blog-title-container__p">{{date}} | {{#each categories}}{{this}} {{#unless @last}}•{{/unless}} {{/each}}</p>
+            <div class="col-sm-12">
+							{{#if hasError}}
+								<div>
+									{{error}}
 								</div>
-							{{/each}}
+							{{else}}
+								{{#each blogs}}
+									<div class="blog-title-container">
+										<h2><a href="{{link}}">{{title}}</a></h2>
+										<p class="blog-title-container__p">{{pubDate}}</p>
+										<div>{{{description}}}</div>
+									</div>
+								{{/each}}
+							{{/if}}
             </div>
-						{{>asideBlog blogCategories=blogCategories}}
         </div>
     </div>
 </div>

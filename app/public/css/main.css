@@ -264,7 +264,9 @@ a.btn-pink:hover, a.btn-pink:focus {
   }
 
   .content img {
-    margin: 50px 0;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
     box-shadow: 1px 15px 30px #ADB9C4;
   }
 
@@ -388,6 +390,10 @@ a.btn-pink:hover, a.btn-pink:focus {
 
 /* Blog */
 /*--------------------------------------------- Blog Styling --------------------------------------------*/
+.content-blog {
+  padding-top: 0;
+}
+
 .blog-title-container {
   padding: 1em 0;
 }
@@ -395,23 +401,6 @@ a.btn-pink:hover, a.btn-pink:focus {
   .blog-title-container__p {
     margin-top: -10px;
   }
-/*.blog {width: 90%; padding: 0 5%;}
-
-    .blog h2 {margin: 0 0 2em 0; padding: 2em 0 0 0; color: #5e7184; font-size: 0.83em; border-bottom: dotted 1px #d0d6df;}
-
-    .blog-entry {margin: 5em 0;}
-
-        .blog-header, .blog-content p, .blog-content h2, .blog-content h4, .blog-content ul {width: 90%; margin-left: auto; margin-right: auto;}
-
-        .blog-entry h1 {line-height: 1.4em;}
-
-        .blog-entry h3 {color: #85919a; font-size: 0.83em; font-style: italic; margin-top: 0;}
-
-            .blog-entry h3 span {font-style: normal;}
-
-        .blog img {margin: 1em 0;}
-
-    .blog-content p {font-size: 0.9em;}*/
 
 
 /*--------------------------------------------- Blog Aside Styling --------------------------------------------*/
@@ -425,7 +414,7 @@ a.btn-pink:hover, a.btn-pink:focus {
 
 h2.mail-link-h2 {
   margin: .5em 0;
-  font-size: 9em;
+  font-size: 4vw;
   text-align: center;
 }
 
@@ -487,102 +476,124 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 /* iPhones (portrait) ----------- */
 @media only screen and (min-width: 435px) {
-  .about-hobbies-row img.meat-deer-ah {
-    width: 82%;
+
+    .about-hobbies-row img.meat-deer-ah {
+      width: 82%;
     }
+
   }
 
 /* iPhones (landscape) ----------- */
 @media only screen and (min-width: 560px) {
-  /* Gallery Styles */
-  .gallery ul li {
-    float: left;
-    width: 48%;
-    margin: 1%;
-  }
-  /* content */
-  .content h4, .content h2, .content p, .content-ul {
-    width: 80%;
-    margin-left: 10%;
-  }
-  /* about hobbies */
-  .about-hobbies-row img.meat-deer-ah {
-    width: 60%;
-  }
-  .iphone-display img {
-    float: left;
-    width: 33%;
+
+    /* Gallery Styles */
+    .gallery ul li {
+      float: left;
+      width: 48%;
+      margin: 1%;
     }
+
+    /* content */
+    .content h4, .content h3, .content h2, .content p, .content ul, .content blockquote {
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    /* about hobbies */
+    .about-hobbies-row img.meat-deer-ah {
+      width: 60%;
+    }
+
+    .iphone-display img {
+      float: left;
+      width: 33%;
+    }
+
   }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-width: 768px) {
-  /* so that the navbar does stay fixed on larger screen sizes */
-  .navbar-fixed-top {
-    position: fixed;
-  }
-  /* needs the adjusted padding as the navbar being fixed brings up the rest of the layout */
-  .jumbotron {
-    padding-top: 5em;
-  }
-  /* section heading */
-  .section-heading {
-    padding-bottom: 5em;
-  }
-  /* content */
-  .content h4, .content h2, .content p, .content-ul {
-    width: 70%;
-    margin-left: 15%;
-  }
-  /* about technologies used */
-  .tech-used ul {
-    padding-bottom: 3em;
-  }
-  /* about hobbies */
-  .about-hobbies-row img.meat-deer-ah {
-    width: 45%;
+
+    /* so that the navbar does stay fixed on larger screen sizes */
+    .navbar-fixed-top {
+      position: fixed;
     }
+
+    /* needs the adjusted padding as the navbar being fixed brings up the rest of the layout */
+    .jumbotron {
+      padding-top: 5em;
+    }
+
+    /* section heading */
+    .section-heading {
+      padding-bottom: 5em;
+    }
+
+    /* content */
+    .content h4, .content h3, .content h2, .content p, .content ul, .content blockquote {
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    .content-blog {
+      padding-top: 5em;
+    }
+
+    /* about technologies used */
+    .tech-used ul {
+      padding-bottom: 3em;
+    }
+
+    /* about hobbies */
+    .about-hobbies-row img.meat-deer-ah {
+      width: 45%;
+    }
+
   }
 
 /* 992px ----------- */
 @media only screen and (min-width: 992px) {
-  /* about hobbies */
-  .about-hobbies-row img.meat-deer-ah {
-    width: inherit;
-  }
-  /* footer */
-  footer .row {
-    margin: 2em 0 1em 0;
-  }
-  .copyright {
-    padding-top: 0;
-  }
-  .social-networks-ul {
-    margin: 0;
-    text-align: right;
+
+    /* about hobbies */
+    .about-hobbies-row img.meat-deer-ah {
+      width: inherit;
     }
+
+    /* footer */
+    footer .row {
+      margin: 2em 0 1em 0;
+    }
+
+    .copyright {
+      padding-top: 0;
+    }
+
+    .social-networks-ul {
+      margin: 0;
+      text-align: right;
+    }
+
   }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 1024px) {
-  /* content */
-  .content h4, .content h2, .content p, .content-ul {
-    width: 60%;
-    margin-left: 20%;
-  }
-  .iphone-display-2 {
-    margin-left: 5%;
+
+    /* content */
+    .content h4, .content h3, .content h2, .content p, .content ul, .content blockquote {
+      width: 60%;
+      margin-left: 20%;
     }
+
+    .iphone-display-2 {
+      margin-left: 5%;
+    }
+
   }
 
 @media only screen and (min-width: 1201px) {
-  .iphone-display-2 {
-    margin-left: 15%;
-  }
-  img.logo-display {
-    margin-left: 10%;
-  }
-  img.rwd-displays {
-    margin-left: 5%;
+
+    .iphone-display-2 {
+      margin-left: 15%;
     }
+
   }
