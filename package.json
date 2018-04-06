@@ -24,10 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/robbethencourt/portfolio.git"
   },
-  "keywords": [
-    "developer",
-    "designer"
-  ],
+  "keywords": ["developer", "designer"],
   "author": "Robert Bethencourt",
   "license": "ISC",
   "bugs": {

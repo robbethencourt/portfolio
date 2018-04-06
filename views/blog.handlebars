@@ -3,13 +3,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-xs-10">
-				{{#if blogCategory}}
-					<h2>{{blogCategory}}</h2>
-					<p class="article-h2-content">posts in the {{blogCategory}} category</p>
-				{{else}}
-					<h2>blog</h2>
+				<h2>blog</h2>
 					<p class="article-h2-content">My blog posts can be found on Medium. You can check them out below.</p>
-				{{/if}}
 			</div>
 		</div>
 	</div>
@@ -28,7 +23,12 @@
 								{{#each blogs}}
 									<div class="blog-title-container">
 										<h4><a href="{{link}}">{{title}}</a></h4>
-										<p class="blog-title-container__p">{{pubDate}}</p>
+										<p class="blog-title-container__caegories">
+											{{#each categories}}
+												{{this}} {{#unless @last}}/{{/unless}}
+											{{/each}}
+										</p>
+										<p class="blog-title-container__pubDate">{{pubDate}}</p>
 									</div>
 								{{/each}}
 							{{/if}}
