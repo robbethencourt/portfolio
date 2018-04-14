@@ -17,6 +17,27 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/bubbles", function(req, res) {
+    res.render("bubbles", {
+      title: "Projects - Bubbles",
+      active_projects: true
+    });
+  });
+
+  app.get("/alpha-admin", function(req, res) {
+    res.render("alpha-admin", {
+      title: "Projects - Alpha Logistics Service - Admin",
+      active_projects: true
+    });
+  });
+
+  app.get("/elm-breakout", function(req, res) {
+    res.render("elm-breakout", {
+      title: "Projects - Elm Breakout",
+      active_projects: true
+    });
+  });
+
   app.get("/crisiscorps", function(req, res) {
     res.render("crisiscorps", {
       title: "Projects - Crisiscorps",
