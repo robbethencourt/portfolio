@@ -5,26 +5,29 @@
   "main": "server.js",
   "dependencies": {
     "axios": "^0.16.2",
-    "express": "^4.14.0",
+    "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "ramda": "^0.24.1",
-    "rss-to-json": "^1.0.2"
+    "ramda": "^0.24.1"
   },
   "engines": {
     "node": "9.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cssnano": "^3.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "minicss": "postcss app/public/css/main.css > app/public/css/output.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robbethencourt/portfolio.git"
   },
-  "keywords": ["developer", "designer"],
+  "keywords": [
+    "developer",
+    "designer"
+  ],
   "author": "Robert Bethencourt",
   "license": "ISC",
   "bugs": {
