@@ -6,8 +6,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "ramda": "^0.24.1"
+    "express-handlebars": "^3.0.0"
   },
   "engines": {
     "node": "9.5.0"
@@ -17,17 +16,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "minicss": "postcss app/public/css/main.css > app/public/css/output.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robbethencourt/portfolio.git"
   },
-  "keywords": [
-    "developer",
-    "designer"
-  ],
+  "keywords": ["developer", "designer"],
   "author": "Robert Bethencourt",
   "license": "ISC",
   "bugs": {
