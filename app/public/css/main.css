@@ -312,6 +312,11 @@ img.rwd-displays {
   background: #1f2631;
 }
 
+.tech-used-comment {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .tech-used .row > div {
   padding-bottom: 5em;
 }
@@ -432,14 +437,6 @@ img.rwd-displays {
 
 .blog-title-container__pubDate {
   margin-top: -10px;
-}
-
-/*--------------------------------------------- Blog Aside Styling --------------------------------------------*/
-.blog-aside-ul {
-  padding: 0;
-  margin-bottom: 4em;
-  list-style-type: none;
-  font-size: 0.83em;
 }
 
 /* contact */
@@ -564,11 +561,6 @@ a.back-to-top:focus {
   /* needs the adjusted padding as the navbar being fixed brings up the rest of the layout */
   .jumbotron {
     padding-top: 5em;
-  }
-
-  /* section heading */
-  .section-heading {
-    padding-bottom: 5em;
   }
 
   /* content */
