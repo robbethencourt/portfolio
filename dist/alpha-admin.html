@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rob Bethencourt's portfolio" />
+    <meta name="author" content="Rob Bethencourt" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Rob's Portfolio | {{title}}</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
+  </head>
+  <body id="page-top">
+    <!-- nav -->
+    <header class="nav-header">
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a class="navbar-brand" href="index.html">rob bethencourt</a>
+          </p>
+        </div>
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">projects</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<!-- About Section -->
+<div class="section-heading">
+  <div class="container">
+    <h2>alpha logistics service - admin</h2>
+    <p class="article-h2-content">
+      The admin backend we use to manage our transportation company. Redesigned
+      in 2013 in an effort to make it more user friendly, and easier to add
+      features to.
+    </p>
+    <h5>html / css / javaScript / elm / coldFusion / design</h5>
+    <h5>
+      redesigned in 2013 and continue to maintain and develop features for
+    </h5>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <h4>Tables No More And So Much More</h4>
+    <p>
+      The original admin section of the Alpha Logistics web application was
+      built in the late 90s and used tables for layout. While that's not ideal,
+      what really was problematic was that many features had been added without
+      attempts to organize them into like sections. Links were added to drop
+      down menus and the users just had to know where to look. Onboarding new
+      personnel was always challenging as navigating the admin site required
+      trial and error.
+    </p>
+    <img
+      src="images/alpha-admin-routes-overview-screen-only-iphone-display.jpg"
+      alt="routes overview screenshot in iPhone sized display"
+    />
+    <p>
+      By the time I started work on the redesign, Smart Phones were being used
+      by the staff. The ability to access data in the system while walking the
+      warehouse became a feature that would give our management staff more
+      granular visibility while away from their desk, but we needed to
+      restructure the content and adopt a responsive design.
+    </p>
+    <img
+      src="images/alpha-admin-routes-overview-nav-visible-screen-only-iphone-display.jpg"
+      alt="routes overview screenshot in iPhone sized display with navigation showing"
+    />
+    <h4>Is The Driver Late? Now We Know</h4>
+    <p>
+      The redesign of the Routes Overview page gives the dispatcher and
+      operations staff the ability to track late deliveries and short orders at
+      a glance for all the drivers making deliveries. They can now more quickly
+      identify, solve problems and communicate accurate information back to
+      customers.
+    </p>
+    <img
+      src="images/alpha-admin-routes-overview-website-full.jpg"
+      alt="routes overview screenshot"
+    />
+    <img
+      src="images/alpha-admin-routes-dashboard-website-full.jpg"
+      alt="routes dashboard screenshot"
+    />
+    <h4>Beyond Redesign and into SPA</h4>
+    <p>
+      While most of the javaScript is a mix of vanilla and jQuery, new features
+      are now added with the front end functional programming language elm and
+      react library. Elm's ability to drastically reduce, or all together
+      eliminate runtime errors means we don't revisit shipped features for bugs
+      we didn't catch in tests. Our business logic may need to be expanded or
+      refined, but code that mysteriously fails on our users is no longer a
+      concern. When the project allows, elm has become our go-to for frontend
+      development.
+    </p>
+    <img
+      src="images/alpha-admin-calendar-website-full.jpg"
+      alt="alpha admin calendar screenshot"
+    />
+  </div>
+</div>
+
+<!-- footer -->
+    <footer>
+   		<a href="#page-top" class="back-to-top" id="scroll-button"><h3>cd ~ &#8679;</h3></a>
+      <div class="row">
+        <div class="copyright">
+            <p>&#169; <span id="js-date"></span> Robert Bethencourt All Rights Reserved</p>
+        </div>
+        <div class="nav left social-networks-ul">
+        	<a href="https://github.com/robbethencourt" class="nav-item github-button">github</a>
+          <a href="https://medium.com/@rob_bethencourt" class="nav-item">blog (medium)</a>
+        	<a href="https://www.linkedin.com/in/robert-bethencourt-13425316" class="nav-item linkedin-button">linkedIn</a>
+          <a href="https://twitter.com/rob_bethencourt" class="nav-item twitter-button">twitter</a>
+          <a href="http://letterboxd.com/Meat_Deer/" class="nav-item letterboxd-button">letterboxd</a>
+          <a href="https://www.instagram.com/rob_bethencourt/" class="nav-item instagram-button">instagram</a>
+          <!-- <a href="https://www.facebook.com/robert.bethencourt" class="nav-item facebook-button">facebook</a> -->
+        </div>
+        <p class="mail-link">
+          <a
+            href="mailto:robert.bethencourt@gmail.com?Subject=Hello%20again"
+            target="_top"
+            >robert.bethencourt@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
+	</body>
+</html>
+
