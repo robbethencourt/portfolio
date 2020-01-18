@@ -13,9 +13,11 @@ const server = browserSync.create();
 const paths = {
   src: "./src/**/*",
   html: "./src/*.html",
-  htmlDist: "./dist",
-  css: "./src/css/**/*",
-  cssDist: ".dist/css"
+  htmlDist: "./",
+  css: "./src/css/*.css",
+  cssDist: "./css",
+  js: "src/js/*.js",
+  jsDist: "./js"
 };
 
 var cssVersion = 0.1;
@@ -37,29 +39,29 @@ function html() {
 // css
 function css() {
   return gulp
-    .src(["src/css/*.css"])
+    .src([paths.css])
     .pipe(plumber())
     .pipe(minifyCSS())
     .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9"))
     .pipe(concat("style." + cssVersion + ".min.css"))
-    .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest(paths.cssDist));
 }
 
 // js
 function js() {
   return gulp
-    .src(["src/js/*.js"])
+    .src([paths.js])
     .pipe(plumber())
     .pipe(uglify())
     .pipe(rename("scripts." + jsVersion + ".min.js"))
-    .pipe(gulp.dest("dist/js"));
+    .pipe(gulp.dest(paths.jsDist));
 }
 
 // BrowserSync
 function serve() {
   return server.init({
     server: {
-      baseDir: "./dist"
+      baseDir: paths.htmlDist
     },
     port: 3001
   });
