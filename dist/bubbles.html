@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rob Bethencourt's portfolio" />
+    <meta name="author" content="Rob Bethencourt" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Rob's Portfolio</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.0.1.min.css" />
+  </head>
+  <body id="page-top">
+    <!-- nav -->
+    <header class="nav-header">
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a class="navbar-brand" href="index.html">rob bethencourt</a>
+          </p>
+        </div>
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">projects</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<!-- About Section -->
+<div class="section-heading">
+  <div class="container">
+    <h2>bubbles</h2>
+    <p class="article-h2-content">
+      Water tracking app for Pilates Boutique that leverages some pwa features
+      and indexedDB.
+    </p>
+    <h5>elm / typescript / css / indexedDB / design</h5>
+    <h5>created 2018</h5>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <img
+      src="images/bubbles-logo-display.jpg"
+      alt="bubbles logo on light and dark backgrounds"
+      class="logo-display"
+    />
+    <h4>Logo</h4>
+    <p>
+      The bubbles app needed to have a sense of playfulness the vibrant colors
+      helped to create.
+    </p>
+    <img
+      src="images/bubbles-daily-bubbles-screen-iphone-display.jpg"
+      alt="Daily bubbles screen shot for bubbles app. The screen that lets you track your water intake."
+    />
+    <h4>Web</h4>
+    <p>
+      Bubbles is a water tracking app built for Pilates Boutique. The idea was
+      to create an enjoyable experience to a rather mundane task. Tracking your
+      water intake each day can be a pain so the idea was to simplify the user
+      experience by letting users set a water bottle size. This allowed them to
+      updated their intake with one click. All the interactions on the app are
+      enhanced with short animations that allow the app to be a fun experience.
+    </p>
+    <img
+      src="images/bubbles-nav-screen-iphone-display.jpg"
+      alt="Bubbles app navigation screen shot."
+    />
+    <h4>CSS Animations for a More Pleasant User Experience</h4>
+    <p>
+      The short animated transitions between pages creates a fluid experience
+      and eliminates the abrupt break traditionally found on the web. Tracking
+      your water intake also animates the progress circle by a percentage of the
+      amount left to hydrate for the day. And, once you've reached your goal for
+      the day animated bubbles float up from the bottom of the screen. The hope
+      with designing the app with animations in mind helped to create a pleasant
+      user experience that makes the app fun to use.
+    </p>
+    <img
+      src="images/bubbles-settings-screen-iphone-display.jpg"
+      alt="Bubbles app settings screen shot."
+    />
+    <h4>With Great Power Comes Great Responsibility</h4>
+    <p>
+      It can be easy to animate too many things! CSS animations are so easy to
+      use that as a developer and designer restraint needs to be a priority.
+      Animating between views can look great, but if your transitions are
+      lasting even half a second, it becomes a frustrating experience for the
+      user. Sure that first time may look cool, but after visiting the page 5
+      times a day (which the users would do as they track their water intake
+      throughout the day) it would become maddening.
+    </p>
+    <p class="link-button-wrapper">
+      <a
+        href="https://www.waterbubbles.me/"
+        class="btn btn-lg btn-block btn-pink"
+        >try bubbles</a
+      >
+    </p>
+  </div>
+</div>
+
+<!-- footer -->
+    <footer>
+   		<a href="#page-top" class="back-to-top" id="scroll-button"><h3>cd ~ &#8679;</h3></a>
+      <div class="row">
+        <div class="copyright">
+            <p>&#169; <span id="js-date"></span> Robert Bethencourt All Rights Reserved</p>
+        </div>
+        <div class="nav left social-networks-ul">
+        	<a href="https://github.com/robbethencourt" class="nav-item github-button">github</a>
+          <a href="https://medium.com/@rob_bethencourt" class="nav-item">blog (medium)</a>
+        	<a href="https://www.linkedin.com/in/robert-bethencourt-13425316" class="nav-item linkedin-button">linkedIn</a>
+          <a href="https://twitter.com/rob_bethencourt" class="nav-item twitter-button">twitter</a>
+          <a href="http://letterboxd.com/Meat_Deer/" class="nav-item letterboxd-button">letterboxd</a>
+          <a href="https://www.instagram.com/rob_bethencourt/" class="nav-item instagram-button">instagram</a>
+          <!-- <a href="https://www.facebook.com/robert.bethencourt" class="nav-item facebook-button">facebook</a> -->
+        </div>
+        <p class="mail-link">
+          <a
+            href="mailto:robert.bethencourt@gmail.com?Subject=Hello%20again"
+            target="_top"
+            >robert.bethencourt@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("/serviceworker.js")
+          .then(function(registration) {
+            console.log("Success", registration.scope);
+          })
+          .catch(function(error) {
+            console.log("Failure", error);
+          });
+      }
+    </script>
+    <script type="text/javascript" src="js/scripts.0.1.min.js"></script>
+	</body>
+</html>
+

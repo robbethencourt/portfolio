@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rob Bethencourt's portfolio" />
+    <meta name="author" content="Rob Bethencourt" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Rob's Portfolio</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.0.1.min.css" />
+  </head>
+  <body id="page-top">
+    <!-- nav -->
+    <header class="nav-header">
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a class="navbar-brand" href="index.html">rob bethencourt</a>
+          </p>
+        </div>
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">projects</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- About Section -->
+<div class="section-heading">
+  <div class="container">
+    <h2>hangman</h2>
+    <p class="article-h2-content">
+      Key press hangman javaScript game with a sans-serif theme
+    </p>
+    <h5>html / css / javaScript / design</h5>
+    <h5>created 2016</h5>
+    <h5>
+      <a href="https://github.com/robbethencourt/week-3-game"
+        >github (hangman)</a
+      >
+    </h5>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <h4>Minimal Style</h4>
+    <p>
+      I wanted a minimal style for the look of the game with an emphasis on the
+      word to be guessed and the letters the user has chosen. We were also
+      discussing some typographic concepts during class that week which inspired
+      the idea of using sans-serif typefaces as the game's theme.
+    </p>
+    <img src="images/hangman-full-1.jpg" alt="Initial Hangman game screen" />
+    <h4>Vanilla JS</h4>
+    <p>
+      This project was created before we got into jQuery so it's gloriously
+      vanilla, which I enjoy writing. I used document.onkeyup to capture the
+      keyboard press events for the main functionality of the game. An intro to
+      objects and methods was also a primary focus. Lots of fun.
+    </p>
+    <h4>Hangman's Sense of Impending Doom</h4>
+    <p>
+      I remember the sense of doom that would build when I played this game as a
+      kid. Most would exaggerate the look of the hanging man. I didn't want to
+      be that graphic, but still wanted to impart the tension that builds as you
+      get closer to the noose.
+    </p>
+    <img
+      src="images/hangman-full-2.jpg"
+      alt="Hangman game screen with letters incorrectly chosen to show the red bars across the screen."
+    />
+    <p>
+      I got the idea to fade in red bars across the screen as players
+      incorrectly guess from
+      <a
+        href="https://www.google.com/search?q=red+swiss+type+posters&espv=2&biw=2182&bih=1106&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiSiYuCqqrNAhXBpx4KHcsLDaEQ_AUIBigB#tbm=isch&q=red+swiss+typography+posters"
+        >red Swiss typography posters</a
+      >. It works great. The bars become incrementally redder as each one
+      appears building on that sense of dread.
+    </p>
+    <img src="images/hangman-full-3.jpg" alt="Hangman game win screen." />
+    <h4>Warp World ?</h4>
+    <p>
+      secrets are fun to discover in games. So I implemented a color mode if the
+      player guesses all possible words. It can take a bit to get to as the
+      words are Math.floor(Math.Random())-ly generated, but the game lets you
+      know how many unique words you've guessed and hints at the unlockable
+      color theme to tease the player to continue playing.
+    </p>
+    <img
+      src="images/hangman-full-4.jpg"
+      alt="Hangman game with secret color background if all words have been correctly chosen."
+    />
+    <p class="link-button-wrapper">
+      <a
+        href="https://robbethencourt.github.io/week-3-game/"
+        class="btn btn-lg btn-block btn-pink"
+        >play Hangman</a
+      >
+    </p>
+  </div>
+</div>
+<!-- footer -->
+    <footer>
+   		<a href="#page-top" class="back-to-top" id="scroll-button"><h3>cd ~ &#8679;</h3></a>
+      <div class="row">
+        <div class="copyright">
+            <p>&#169; <span id="js-date"></span> Robert Bethencourt All Rights Reserved</p>
+        </div>
+        <div class="nav left social-networks-ul">
+        	<a href="https://github.com/robbethencourt" class="nav-item github-button">github</a>
+          <a href="https://medium.com/@rob_bethencourt" class="nav-item">blog (medium)</a>
+        	<a href="https://www.linkedin.com/in/robert-bethencourt-13425316" class="nav-item linkedin-button">linkedIn</a>
+          <a href="https://twitter.com/rob_bethencourt" class="nav-item twitter-button">twitter</a>
+          <a href="http://letterboxd.com/Meat_Deer/" class="nav-item letterboxd-button">letterboxd</a>
+          <a href="https://www.instagram.com/rob_bethencourt/" class="nav-item instagram-button">instagram</a>
+          <!-- <a href="https://www.facebook.com/robert.bethencourt" class="nav-item facebook-button">facebook</a> -->
+        </div>
+        <p class="mail-link">
+          <a
+            href="mailto:robert.bethencourt@gmail.com?Subject=Hello%20again"
+            target="_top"
+            >robert.bethencourt@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("/serviceworker.js")
+          .then(function(registration) {
+            console.log("Success", registration.scope);
+          })
+          .catch(function(error) {
+            console.log("Failure", error);
+          });
+      }
+    </script>
+    <script type="text/javascript" src="js/scripts.0.1.min.js"></script>
+	</body>
+</html>
+

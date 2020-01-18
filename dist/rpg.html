@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rob Bethencourt's portfolio" />
+    <meta name="author" content="Rob Bethencourt" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Rob's Portfolio</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="/css/style.0.1.min.css" />
+  </head>
+  <body id="page-top">
+    <!-- nav -->
+    <header class="nav-header">
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a class="navbar-brand" href="index.html">rob bethencourt</a>
+          </p>
+        </div>
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">projects</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- About Section -->
+<div class="section-heading">
+  <div class="container">
+    <h2>star wars rpg</h2>
+    <p class="article-h2-content">
+      Star Wars inspired RPG with an early Final Fantasy 8-bit theme
+    </p>
+    <h5>html / css / javaScript</h5>
+    <h5>Created 2016</h5>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <h4>I CSS RPGs</h4>
+    <p>
+      I've been playing RPGs for a while, so when we got this assignment my mind
+      immediately turned to my RPG playing youth and tried to recreate the look
+      of 8-bit Final Fantasy with html and css.
+    </p>
+    <img src="images/rpg-full-1.jpg" alt="Title screen for my Star Wars RPG." />
+    <img
+      src="images/rpg-full-2.jpg"
+      alt="Screen showing each of the four characters."
+    />
+    <h4>Objects, No Prototypes</h4>
+    <p>
+      I'd recreate this game differently now that I've been introduced to
+      prototypal inheritance, but the purpose was to further our understanding
+      of objects and get experienced with jQuery DOM manipulation, which
+      certainly simplified things syntactically from writing vanilla JS. I still
+      dig writing pure javaScript, but there's no doubt jQuery can make DOM
+      manipulation easier. (but at what page weight cost)
+    </p>
+    <h4>Move Along</h4>
+    <p>
+      I had some fun with the dialogue for this game. I tried to imagine the
+      battles I wanted to see but were never in the movies. I added some logic
+      so the characters would say different things depending on who they were
+      fighting and if they were picked to fight by the player as opposed to
+      being the enemy.
+    </p>
+    <img
+      src="images/rpg-full-3.jpg"
+      alt="Screen showing some of the dialogue."
+    />
+    <img src="images/rpg-full-4.jpg" alt="End screen showing who won." />
+    <p class="link-button-wrapper">
+      <a
+        href="https://robbethencourt.github.io/week-4-game/"
+        class="btn btn-lg btn-block btn-pink"
+        >play Star Wars RPG</a
+      >
+    </p>
+  </div>
+</div>
+<!-- footer -->
+    <footer>
+   		<a href="#page-top" class="back-to-top" id="scroll-button"><h3>cd ~ &#8679;</h3></a>
+      <div class="row">
+        <div class="copyright">
+            <p>&#169; <span id="js-date"></span> Robert Bethencourt All Rights Reserved</p>
+        </div>
+        <div class="nav left social-networks-ul">
+        	<a href="https://github.com/robbethencourt" class="nav-item github-button">github</a>
+          <a href="https://medium.com/@rob_bethencourt" class="nav-item">blog (medium)</a>
+        	<a href="https://www.linkedin.com/in/robert-bethencourt-13425316" class="nav-item linkedin-button">linkedIn</a>
+          <a href="https://twitter.com/rob_bethencourt" class="nav-item twitter-button">twitter</a>
+          <a href="http://letterboxd.com/Meat_Deer/" class="nav-item letterboxd-button">letterboxd</a>
+          <a href="https://www.instagram.com/rob_bethencourt/" class="nav-item instagram-button">instagram</a>
+          <!-- <a href="https://www.facebook.com/robert.bethencourt" class="nav-item facebook-button">facebook</a> -->
+        </div>
+        <p class="mail-link">
+          <a
+            href="mailto:robert.bethencourt@gmail.com?Subject=Hello%20again"
+            target="_top"
+            >robert.bethencourt@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("/serviceworker.js")
+          .then(function(registration) {
+            console.log("Success", registration.scope);
+          })
+          .catch(function(error) {
+            console.log("Failure", error);
+          });
+      }
+    </script>
+    <script type="text/javascript" src="js/scripts.0.1.min.js"></script>
+	</body>
+</html>
+
