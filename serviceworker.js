@@ -1,4 +1,4 @@
-const version = "0.5";
+const version = "0.6";
 var staticCacheName = version + "staticfiles";
 
 // install the serviceWorker
@@ -7,9 +7,9 @@ addEventListener("install", function(installEvent) {
   installEvent.waitUntil(
     caches.open(staticCacheName).then(function(staticCache) {
       return staticCache.addAll([
-        "/css/style.0.1.min.css",
-        "/js/scripts.0.1.min.js",
-        "/offline.html"
+        "./css/style.0.1.min.css",
+        "./js/scripts.0.1.min.js",
+        "./offline.html"
       ]);
     })
   );
@@ -29,7 +29,7 @@ addEventListener("fetch", function(fetchEvent) {
         }
       })
       .catch(function(error) {
-        return caches.match("/offline.html");
+        return caches.match("./offline.html");
       })
   );
 });
