@@ -18,6 +18,9 @@ const paths = {
   cssDist: ".dist/css"
 };
 
+var cssVersion = 0.1;
+var jsVersion = 0.1;
+
 // html
 function html() {
   return gulp
@@ -38,7 +41,7 @@ function css() {
     .pipe(plumber())
     .pipe(minifyCSS())
     .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9"))
-    .pipe(concat("style.min.css"))
+    .pipe(concat("style." + cssVersion + ".min.css"))
     .pipe(gulp.dest("dist/css"));
 }
 
@@ -48,7 +51,7 @@ function js() {
     .src(["src/js/*.js"])
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(rename("scripts.min.js"))
+    .pipe(rename("scripts." + jsVersion + ".min.js"))
     .pipe(gulp.dest("dist/js"));
 }
 
@@ -58,7 +61,7 @@ function serve() {
     server: {
       baseDir: "./dist"
     },
-    port: 3000
+    port: 3001
   });
 }
 
