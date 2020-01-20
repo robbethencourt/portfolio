@@ -1,4 +1,4 @@
-const version = "0.9";
+const version = "0.10";
 var staticCacheName = version + "staticfiles";
 
 // install the serviceWorker

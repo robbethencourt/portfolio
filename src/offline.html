@@ -199,17 +199,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker
-          .register("/serviceworker.js")
-          .then(function(registration) {
-            console.log("Success", registration.scope);
-          })
-          .catch(function(error) {
-            console.log("Failure", error);
-          });
-      }
-    </script>
   </body>
 </html>
