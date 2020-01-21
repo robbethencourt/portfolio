@@ -4,6 +4,7 @@ var scrollButton = document.querySelector("#scroll-button");
 scrollButton.addEventListener("click", scroll, false);
 scrollButton.addEventListener("keydown", scroll, false);
 scrollButton.addEventListener("touchstart", scroll, false);
+scrollButton.addEventListener("touchend", scroll, false);
 
 function scroll(e) {
   e.preventDefault();
