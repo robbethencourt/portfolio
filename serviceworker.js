@@ -1,4 +1,4 @@
-const version = "0.18";
+const version = "0.19";
 var staticCacheName = version + "staticfiles";
 
 // install the serviceWorker
@@ -8,7 +8,7 @@ addEventListener("install", function(installEvent) {
     caches.open(staticCacheName).then(function(staticCache) {
       return staticCache.addAll([
         "./css/style.0.4.min.css",
-        "./js/scripts.0.5.min.js",
+        "./js/scripts.0.6.min.js",
         "./offline.html"
       ]);
     })

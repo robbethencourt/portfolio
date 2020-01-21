@@ -21,7 +21,7 @@ const paths = {
 };
 
 var cssVersion = 0.4;
-var jsVersion = 0.5;
+var jsVersion = 0.6;
 
 // html
 function html() {
