@@ -373,6 +373,7 @@ footer {
 
 footer > a,
 footer > a:visited {
+  touch-action: none;
   display: block;
   transition: 0.3s;
   padding: 2em 0;

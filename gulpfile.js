@@ -20,7 +20,7 @@ const paths = {
   jsDist: "./js"
 };
 
-var cssVersion = 0.3;
+var cssVersion = 0.4;
 var jsVersion = 0.4;
 
 // html
