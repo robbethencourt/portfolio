@@ -2,7 +2,7 @@ const fileinclude = require("gulp-file-include");
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const concat = require("gulp-concat");
-const minifyCSS = require("gulp-minify-css");
+const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync");
 const uglify = require("gulp-uglify");
@@ -41,7 +41,7 @@ function css() {
   return gulp
     .src([paths.css])
     .pipe(plumber())
-    .pipe(minifyCSS())
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(autoprefixer("last 2 version", "safari 5", "ie 8", "ie 9"))
     .pipe(concat("style." + cssVersion + ".min.css"))
     .pipe(gulp.dest(paths.cssDist));
