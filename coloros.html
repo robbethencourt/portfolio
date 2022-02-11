@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rob Bethencourt's portfolio" />
+    <meta name="author" content="Rob Bethencourt" />
+    <link rel="manifest" type="application/json" href="./site.webmanifest" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Rob's Portfolio</title>
+
+    <!-- My Styles -->
+    <link rel="stylesheet" type="text/css" href="./css/style.0.4.min.css" />
+  </head>
+  <body id="page-top">
+    <!-- nav -->
+    <header class="nav-header">
+      <div class="container">
+        <div class="logo">
+          <p>
+            <a class="navbar-brand" href="index.html">rob bethencourt</a>
+          </p>
+        </div>
+        <nav class="nav-links-container">
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">projects</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- About Section -->
+<div class="section-heading">
+  <div class="container">
+    <h2>coloros</h2>
+    <p class="article-h2-content">
+      Color mixing puzzle game for kids that adults can also have fun with.
+    </p>
+    <h5>elm / css / design</h5>
+    <h5>created 2021</h5>
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <img
+      src="images/coloros-logo-display.jpg"
+      alt="coloros logo on light and dark backgrounds"
+      class="logo-display"
+    />
+    <h4>Logo</h4>
+    <p>
+      A simple logo that displays the colors used in the game. A mix of primary, secondary and tertiary colors.
+    </p>
+    <img
+      src="images/coloros-title-screenshot-display.jpg"
+      alt="coloros game title screen with title and begin playing button."
+    />
+    <h4>Inspiration</h4>
+    <p>
+      I wanted to make an original game using the elm programming language. I also wanted to make something my daughter could interact and have fun with. I brainstormed a number of puzzle game ideas, but all were too big in scope. Color mixing provided me with a basic game mechanic that I could keep to a handlful of levels.
+    </p>
+    <h4>Primary, Secondary, Tertiary and Brown</h4>
+    <p>
+      Each level starts with the three primary colors of red, yellow and Blue. From these three colors you can create secondary and tertiary colors to solve each puzzle in the game. Keeping it to just these colors kept the number of outcomes manageable as the game would only have 12 possible colors outcomes. I used brown as the default when a player mixes colors that don't create colors on the color wheel. I remember as a kid, and from watching my daughter paint, that eventually many toddler paintings go brown. As a bit of comedic nostalgia brown lets the player know they've made a mixing error. 
+    </p>
+    <img
+      src="images/coloros-level-select-screenshot-display.jpg"
+      alt="Coloros game level select screen."
+    />
+    <h4>The Puzzles</h4>
+    <p>
+      I wanted Coloros to be a game that could be finished in 15 to 20 minutes and have two important game mechanics that once learned could be applied to all the puzzles. These two are that the brush always keeps the color that was just mixed, and that the same color can be applied to multiple artboards. Level 2 in the game teaches the player that different colors can be applied to the same artboard. The player applies yellow to an artboard and then applies blue to create green and solve the puzzle.
+    </p>
+    <img
+      src="images/coloros-game-screen-1-screenshot-display.jpg"
+      alt="Screenshot of level 5 of the coloros game."
+    />
+    <p>
+      The first real challenge comes on level 6 where green needs to be used twice to solve the puzzle, but is not a primary color the game starts the player out with. On level 5, after a few levels of solving puzzles through color mixing, I made a very simmple puzzle that requires no color mixing in order to reinforce the mechanic that the most recently applied color stays on the brush by having the player apply blue to two consecutive artobards. On level 6 green has to be mixed first and then applied twice, but many players get stuck using yellow twice and then blue on the first yellow and assume blue is still on the brush and apply green to yellow, resulting in the tertiary color yellow-green. Once players realize they need to create green, and then apply it to the other artboard, as opposed to mixing yellow with blue twice, the rest of the game provides similar puzzles with more complexity.
+    </p>
+    <img
+      src="images/coloros-game-screen-2-screenshot-display.jpg"
+      alt="Screenshot of level 6 of the coloros game."
+    />
+    <h4>Elm is Fun</h4>
+    <p>
+      This is the second game I've made with the elm programming language. Elm is a joy to work with. And as this is a personal project I wanted to use a language I'd have fun with. I could list all the reasons why elm is great, but that's been done so many times already. I'm just want to say that it's just so much fun to use!
+    </p>
+    <p class="link-button-wrapper">
+      <a
+        href="https://www.colorosgame.com/"
+        class="btn btn-lg btn-block btn-pink"
+        >try coloros</a
+      >
+    </p>
+  </div>
+</div>
+<!-- footer -->
+    <footer>
+   		<a href="#page-top" class="back-to-top" id="scroll-button">cd ~ &#8679;</a>
+      <div class="row">
+        <div class="copyright">
+            <p>&#169; <span id="js-date"></span> Robert Bethencourt All Rights Reserved</p>
+        </div>
+        <div class="nav left social-networks-ul">
+        	<a href="https://github.com/robbethencourt" class="nav-item github-button">github</a>
+          <a href="https://medium.com/@rob_bethencourt" class="nav-item">blog (medium)</a>
+        	<a href="https://www.linkedin.com/in/robert-bethencourt-13425316" class="nav-item linkedin-button">linkedIn</a>
+          <a href="https://twitter.com/rob_bethencourt" class="nav-item twitter-button">twitter</a>
+          <a href="http://letterboxd.com/Meat_Deer/" class="nav-item letterboxd-button">letterboxd</a>
+          <a href="https://www.instagram.com/rob_bethencourt/" class="nav-item instagram-button">instagram</a>
+          <!-- <a href="https://www.facebook.com/robert.bethencourt" class="nav-item facebook-button">facebook</a> -->
+        </div>
+        <p class="mail-link">
+          <a
+            href="mailto:robert.bethencourt@gmail.com?Subject=Hello%20again"
+            target="_top"
+            >robert.bethencourt@gmail.com</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register("./serviceworker.js")
+          .then(function(registration) {
+            console.log("Success", registration.scope);
+          })
+          .catch(function(error) {
+            console.log("Failure", error);
+          });
+      }
+    </script>
+    <script type="text/javascript" src="./js/scripts.0.6.min.js"></script>
+	</body>
+</html>
+
